@@ -4,4 +4,5 @@ I don't really have the time nor the motivation to explain this shit, just read 
 You also need to change the logo source in your fastfetch config.
 
 **Requires Kitty Terminal Emulator, bc, and imagemagick installed**
+
 Might or might not work in other shells
