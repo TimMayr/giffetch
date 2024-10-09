@@ -2,7 +2,7 @@ function fastfetch {
     rm -rf ~/.cache/fastfetch
     builtin read -r rows cols < <(command stty size)
     IFS=x builtin read -r width height < <(command kitten icat --print-window-size); builtin unset IFS
-    img=$(find ~/.config/fastfetch/img/ -name "*.*" | shuf -n 1)
+    img=$(find ~/.config/fastfetch/pngs/ -name "*.*" | shuf -n 1)
 
     imgWidth=$(magick identify -ping -format '%w' $img\[0\])
     imgHeight=$(magick identify -ping -format '%h' $img\[0\])
